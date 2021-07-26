@@ -1,6 +1,15 @@
+#Screenshots of  App
+![Screenshot (14)](https://user-images.githubusercontent.com/30436452/126982526-1d23bcca-cf19-4bca-89aa-60512b10b40b.png)
+![Screenshot (15)](https://user-images.githubusercontent.com/30436452/126982675-fde36ae6-5889-41ff-9dee-5bdfa54918af.png)
+
+
 # Payment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+This project hseen developed using Angular Material, CSS, HTML .This application provides a payment layout for the user where user levarages following facilities :
+User can enter their card details such as Card Number, Card Holder Name, Card expiry date and cvv.
+App provides facility to enter any card number and they can see the correspondind card type as a icon .
+user has facility to enter card number in a proper format depending on card type i.e [4,6,5] [4,4,4,4].
+On the basis of starting digit of card number ,user can see the card type.
 
 ## Development server
 
