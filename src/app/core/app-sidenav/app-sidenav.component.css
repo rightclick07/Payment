@@ -1,0 +1,12 @@
+.example-container {
+    width: 100%;
+    height: 88%;
+  }
+  .drawer{
+    background-color: rgb(16, 155, 155);
+
+  }
+
+  .header{
+    background-size: cover;
+  }

@@ -1,0 +1,10 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  .toolbar{
+      background-color: rgb(16, 155, 155);
+  }
+  .title-center {
+    flex: 1 1 auto;
+    text-align: center;
+  }

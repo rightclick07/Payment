@@ -1,0 +1,80 @@
+<mat-card class="card">
+    <mat-card-header>
+        <!-- <img mat-card-image src="{{cardImagePath}}" class="card-image"> -->
+        <!-- <img mat-card-image src="{{chipImagePath}}" class="chip-image"> -->
+        <mat-card class = "card-image">
+            <img mat-card-image  src="{{chipImagePath}}" class="chip-image">
+            <img mat-card-image  *ngIf="americanExpressFlag" src="{{americanExpressImagePath}}" class="amex-image">
+            <img mat-card-image  *ngIf="visaCardFlag" src="{{visaCardImagePath}}" class="visa-image">
+            <img mat-card-image  *ngIf="masterCardFlag" src="{{masterCardImagePath}}" class="mastercard-image">
+            <img mat-card-image  *ngIf="unionPayFlag" src="{{unionPayImagePath}}" class="unionpay-image">
+            <form [formGroup]="paymentForm">
+                <div class="mat-card-form">
+                    <mat-form-field class="account" appearance="outline">
+                        <mat-label class="account">CARD NUMBER</mat-label>
+                        <input matInput placeholder="XXXX - XXXX - XXXX - XXXX" #ccNumber formControlName = "cardNumber" (keyup)="creditCardNumberSpacing()">
+                        <mat-icon class="credit-icon" *ngIf="cardFlag" matSuffix>credit_card</mat-icon>
+                    </mat-form-field>
+                </div>
+    
+                <div class="mat-card-form">
+                    <mat-form-field class="name" appearance="outline">
+                        <mat-label class="name">CARD HOLDER NAME</mat-label>
+                        <input matInput placeholder="Please Enter Your Card Holder Name" formControlName= "cardHolderName">
+                    </mat-form-field>
+                    <mat-form-field class="expire" appearance="outline">
+                        <mat-label class="expire">EXPIRES</mat-label>
+                        <input matInput placeholder="" formControlName= "cardHolderName">
+                    </mat-form-field>
+                </div>
+            </form>
+        </mat-card>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="paymentForm" [formGroup]="paymentForm">
+            <div class="mat-form">
+                <mat-form-field class="card-number" appearance="outline">
+                    <mat-label>Card Number</mat-label>
+                    <input matInput placeholder="Please Enter Your Card Number" #ccNumber formControlName = "cardNumber" (keyup)="creditCardNumberSpacing()">
+                </mat-form-field>
+            </div>
+
+            <div class="mat-form">
+                <mat-form-field class="card-holder-name" appearance="outline">
+                    <mat-label>Card Holder Name</mat-label>
+                    <input matInput placeholder="Please Enter Your Card Holder Name" formControlName= "cardHolderName">
+                    <mat-hint>Please Enter Card Holder Name</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="mat-form">
+                <mat-form-field class="month" appearance="outline">
+                    <mat-label>Select Month</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let element of months" [value]="element">
+                            {{element}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-hint>Please Select Month</mat-hint>
+                </mat-form-field>
+                <mat-form-field class="year" appearance="outline">
+                    <mat-label>Select Year</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let element of years" [value]="element">
+                            {{element}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-hint>Please Select Year</mat-hint>
+                </mat-form-field>
+                <mat-form-field class="cvv" appearance="outline">
+                    <mat-label>CVV</mat-label>
+                    <input matInput placeholder="Please Enter Your CVV">
+                    <mat-icon class="cvv-icon" matSuffix>lock</mat-icon>
+                    <mat-hint>Please Enter Your CVV</mat-hint>
+                </mat-form-field>
+            </div>
+            <div>
+                <button type="submit" mat-button class="payButton">Pay Now</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

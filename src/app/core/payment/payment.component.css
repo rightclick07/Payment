@@ -1,0 +1,101 @@
+.card {
+    max-width: 1000px;
+    height: 600px;
+   margin-left:auto;
+   margin-top: 100px;
+   margin-right:auto;
+  vertical-align:middle;
+  }
+ .credit-icon{
+   color: white;
+ }
+ .payButton{
+  background-color: rgb(16, 155, 155);
+  color: white;
+  width: 600px;
+  margin-top: 20px;
+ }
+ .paymentForm{
+  text-align: center;
+ }
+ .mat-form{
+width: 100%;
+margin-top: 10px;
+ }
+ .card-number{
+   width: 600px;
+ }
+ .card-holder-name{
+  width: 600px;
+ }
+ .month{
+   width:150px;
+   margin-right: 5px;
+ }
+ .year{
+   width:175px;
+   margin-right: 45px;
+ }
+ .cvv{
+   width: 225px;
+ }
+ .credit-card-icon{
+  color: rgb(16, 155, 155);
+ }
+ .cvv-icon{
+  color: rgb(16, 155, 155);
+ }
+ .card-image {
+  background: url("/../assets/image/card.jpeg") no-repeat center;
+  vertical-align:middle;
+  margin-right:auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  height:200px;
+  width: 400px;
+  border-radius: 15px;
+ }
+ .chip-image{
+   height:45px;
+   width: 60px;
+   margin-top: 10px;
+   margin-left: 5px;
+ }
+ .amex-image{
+  height:45px;
+  width: 60px;
+  float: right;
+  margin-right: 5px;
+ }
+ .visa-image{
+  height:55px;
+  width: 60px;
+  float: right;
+  margin-right: 5px;
+}
+.mastercard-image{
+  height:45px;
+  width: 60px;
+  float: right;
+  margin-right: 5px;
+ }
+ .unionpay-image{
+  height:45px;
+  width: 60px;
+  float: right;
+  margin-right: 5px;
+ }
+ .account{
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .name{
+  color: white;
+  margin-right: 5PX;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .expire{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 150px;
+ }
