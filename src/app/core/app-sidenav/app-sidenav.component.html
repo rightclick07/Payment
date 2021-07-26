@@ -1,12 +1,15 @@
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened class="drawer">
         <mat-selection-list #shoes [multiple]="false">
-            <mat-list-option>
-              Payment
+            <mat-list-option [routerLink]="['/google-payment']" routerLinkActive="router-link-active" >
+              Google Payment
+            </mat-list-option>
+            <mat-list-option [routerLink]="['/card-payment']" routerLinkActive="router-link-active" >
+              Card Payment
             </mat-list-option>
           </mat-selection-list>          
     </mat-drawer>
     <mat-drawer-content>
-       <app-payment></app-payment>
+      <router-outlet></router-outlet>
     </mat-drawer-content>
   </mat-drawer-container>

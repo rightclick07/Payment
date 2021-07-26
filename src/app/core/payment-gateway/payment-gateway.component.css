@@ -1,0 +1,17 @@
+.googlepay{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+}
+.pay-button{
+    margin-left: 80px;
+}
+.card{
+    max-width: 400px;
+    height: 300px;
+   margin-left:auto;
+   margin-top: 100px;
+   margin-right:auto;
+  vertical-align:middle;
+  background-color: rgb(16, 155, 155);
+}

@@ -21,6 +21,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { PaymentGatewayComponent } from './core/payment-gateway/payment-gateway.component';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppUserProfileComponent,
     AppFooterComponent,
     AppSidenavComponent,
-    PaymentComponent
+    PaymentComponent,
+    PaymentGatewayComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatInputModule,
     MatDatepickerModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    GooglePayButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
