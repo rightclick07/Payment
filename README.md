@@ -1,6 +1,8 @@
 #Screenshots of  App
 ![Screenshot (14)](https://user-images.githubusercontent.com/30436452/126982526-1d23bcca-cf19-4bca-89aa-60512b10b40b.png)
 ![Screenshot (15)](https://user-images.githubusercontent.com/30436452/126982675-fde36ae6-5889-41ff-9dee-5bdfa54918af.png)
+![Screenshot (18)](https://user-images.githubusercontent.com/30436452/127051505-337d6d70-d025-418a-8bba-3072ae2b0d82.png)
+![Screenshot (17)](https://user-images.githubusercontent.com/30436452/127051534-fe4ca6e7-0c86-44c9-b538-6c336e107e90.png)
 
 
 # Payment
@@ -10,6 +12,7 @@ User can enter their card details such as Card Number, Card Holder Name, Card ex
 App provides facility to enter any card number and they can see the correspondind card type as a icon .
 user has facility to enter card number in a proper format depending on card type i.e [4,6,5] [4,4,4,4].
 On the basis of starting digit of card number ,user can see the card type.
+Added Google pay payment method.
 
 ## Development server
 
